@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCXP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--parte superior-->
+    <div id="tit-sup">
+       <img src="CCXP.svg" alt="">
+    </div>
+    <!--texto, vídeo e relógio-->
+    <div id="conteudo">
+        <div id="textos">
+            <h1>REVIVA O ÉPICO</h1><br>
+            <h3> DE 01 A 04 DE DEZEMBRO</h3><br>
+            <p>
+                Você consegue sentir? É aquela sensação de <br>
+                finalmente poder falar em voz alta: "estamos <br>
+                em casa". Sim, em dezembro de 2022, <br>
+                teremos a volta da CCXP física. Mas não será <br>
+                qualquer CCXP, vai ser a maior de todos os <br>
+                tempos. Prepare-se para visitar seus <br>
+                universos favoritos, explorar o Artists' Valley, <br>
+                se emocionar nos auditórios e encontrar <br>
+                aventuras épicas a cada passo pelos nossos <br> 
+                corredores.
+            </p>
+        </div>
+        <div id="temp-vid">
+          <div id="tempo"> 
+                <h1 id="dia">00</h1>
+                <h1 id="hora">00</h1>
+                <h1 id="minuto">00</h1>
+                <h1 id="segundo">00</h1>
+          </div> 
+            <h2 style="color: #E33881;">PARA A MAIOR CCXP DE TODOS OS TEMPOS</h2>
+          <div id="video">
+            <video autoplay loop controls src="vid/Arlequina.mp4"></video>
+          </div>
+        </div>
+     </div>  
+     <h1 id="tit-2" style="color: #F3C61F;">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h1>
+     <footer id="cards">
+      <div >
+          <img width="230px" src="icon/card1.svg" class="ingressos" id="quinta" onmouseenter="highlightCard('#quinta')" onmouseleave="highlightCard('#quinta')" onclick="SelectCard('#quinta')">
+          <img width="230px" src="icon/card2.svg" class="ingressos"  id="sexta" onmouseenter="highlightCard('#sexta')" onmouseleave="highlightCard('#sexta')" onclick="SelectCard('#sexta')">
+          <img width="230px" src="icon/card3.svg" class="ingressos"  id="sabado" onmouseenter="highlightCard('#sabado')" onmouseleave="highlightCard('#sabado')" onclick="SelectCard('#sabado')">
+          <img width="230px" src="icon/card4.svg" class="ingressos"  id="domingo" onmouseenter="highlightCard('#domingo')" onmouseleave="highlightCard('#domingo')" onclick="SelectCard('#domingo')">
+          <button id="botao" onclick="showSelectedCards()"><strong>GARANTA O SEU!</strong></button>
+     </div>
+    </footer> 
+     <form  target="_blank" action="https://www.google.com">
+      <input type="email" placeholder="SEU EMAIL">
+      <input type="submit">
+     </form>
+     <script src="contagem.js"></script>  
+     <script src="main.js"></script> 
+</body>    
+</html>                   
